@@ -6,6 +6,7 @@ This project is a portable diagnostic tool developed in **Python** to assist IT 
 ## 🚀 Features
 * **Automated Diagnostics**: Checks disk and network status in seconds.
 * **Portable Execution**: Includes a `.bat` file for easy execution from a USB drive on any Windows workstation without manual command typing.
+* **System Information Reporter:** Collects OS, CPU, and Network names into a generated .txt report.
 * **Troubleshooting Focused**: Developed to optimize incident resolution time and ensure operational continuity.
 
 ## 🛠️ Technologies
@@ -14,5 +15,6 @@ This project is a portable diagnostic tool developed in **Python** to assist IT 
 * **Diskpart**: Used for advanced storage management and hardware preparation.
 
 ## 📖 How to use
-1. Copy the `health_check.py` and `executar_check.bat` to your USB drive.
+1. Copy the Python scripts (.py) and automation files (.bat) to your USB drive.
+
 2. Run `executar_check.bat` as Administrator on the target machine.
