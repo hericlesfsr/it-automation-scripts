@@ -1,20 +1,74 @@
-# IT Support Health Check Tool
+# IT Automation Scripts for IT Support
 
 ## 📋 Description
-This project is a portable diagnostic tool developed in **Python** to assist IT Support teams in performing quick system health checks. It identifies available disk space and verifies internet connectivity instantly.
+This repository contains a collection of **Python automation scripts** designed to assist **IT Support and Infrastructure teams** with common operational tasks such as system health checks, system information reporting, and file organization.
 
-## 🚀 Features
-* **Automated Diagnostics**: Checks disk and network status in seconds.
-* **Portable Execution**: Includes a `.bat` file for easy execution from a USB drive on any Windows workstation without manual command typing.
-* **System Information Reporter:** Collects OS, CPU, and Network names into a generated .txt report.
-* **Troubleshooting Focused**: Developed to optimize incident resolution time and ensure operational continuity.
+The tools are lightweight, portable, and focused on improving troubleshooting efficiency and operational productivity.
+
+---
+
+## 🚀 Available Tools
+
+### 🔹 System Health Check
+A portable diagnostic tool developed in Python to perform quick system health checks.
+
+**Features:**
+- Checks available disk space
+- Verifies internet connectivity
+- Designed for fast troubleshooting
+- Portable execution via `.bat` file
+
+**Files:**
+- `health_check.py`
+- `executar_check.bat`
+
+---
+
+### 🔹 System Information Reporter
+Collects essential system information and generates a structured `.txt` report.
+
+**Features:**
+- OS information
+- CPU details
+- Machine and network name
+- Automatic report generation
+
+**Files:**
+- `system_info.py`
+- `executar_info.bat`
+
+---
+
+### 🔹 File Organizer Tool
+A Python automation script that organizes files into folders based on file extensions.  
+This tool simulates a common IT Support task such as organizing user directories or shared folders.
+
+**Features:**
+- Automatically detects file extensions
+- Creates destination folders dynamically
+- Moves files safely
+- One-click execution using a `.bat` file
+- Portable and beginner-friendly
+
+**Files:**
+- `file_organizer.py`
+- `run_file_organizer.bat`
+
+---
 
 ## 🛠️ Technologies
-* **Python 3.x**.
-* **Windows Batch (CMD)**.
-* **Diskpart**: Used for advanced storage management and hardware preparation.
+- Python 3.x
+- Windows Batch (CMD)
+- Standard Python libraries (`os`, `shutil`, `socket`, `platform`)
 
-## 📖 How to use
-1. Copy the Python scripts (.py) and automation files (.bat) to your USB drive.
+---
 
-2. Run `executar_check.bat` as Administrator on the target machine.
+## 📖 How to Use
+1. Copy the desired Python scripts (`.py`) and Batch files (`.bat`) to a local folder or USB drive.
+2. Ensure Python 3.x is installed on the target machine.
+3. Run the corresponding `.bat` file to execute the automation with one click.
+
+---
+
+## 🎯 Purpose
+These scripts were created for **learning, practice, and portfolio purposes**, simulating real-world IT Support and Infrastructure automation tasks.
