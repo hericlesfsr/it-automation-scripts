@@ -7,6 +7,16 @@ The tools are lightweight, portable, and focused on improving troubleshooting ef
 
 🚀 **Available Tools**
 
+🔹 **Web Availability & Latency Checker**
+A connectivity tool to check if a website is online and measure its response time.
+* **Features:**
+    * Checks if a URL is up (Online/Offline status).
+    * Measures latency (ping) in milliseconds.
+    * Performs multiple attempts with timed intervals.
+    * Automatic logging of results in `web_monitor_log.txt`.
+* **What I learned:** Measuring execution time and managing connection timeouts.
+* **Files:** `web_monitor.py`, `run_web_monitor.bat`.
+
 🔹 **Currency & Market Monitor**
 A real-time financial monitoring tool that connects to external APIs to fetch currency exchange rates.
 * **Features:**
@@ -51,8 +61,9 @@ A Python automation script that organizes files into folders based on file exten
 📖 **How to Use**
 
 1. Copy the desired Python scripts (.py) and Batch files (.bat) to a local folder.
-2. For the **Currency Monitor**, ensure you install the dependency: `pip install requests`.
-3. Run the corresponding .bat file to execute the automation with one click.
+2. For the **Currency Monitor** and **Web Monitor**, ensure you install the dependency: ```bash
+pip install requests
+4. Run the corresponding .bat file to execute the automation with one click.
 
 🎯 **Purpose**
 
