@@ -7,6 +7,15 @@ The tools are lightweight, portable, and focused on improving troubleshooting ef
 
 🚀 **Available Tools**
 
+🔹**Network Security Port Scanner**
+A security auditing tool designed to identify open ports and potential vulnerabilities in a network host.
+* **Features:**
+    * Scans common service ports (SSH, HTTP, RDP, etc.).
+    * Real-time connection testing using socket programming.
+    * Generates security audit logs for compliance tracking.
+* **What I learned:** Networks protocols, socket timeouts, and handling network-level exceptioins.
+* **Files:** `port_scanner.py`, `run_port_scanner.bat`.
+
 🔹 **Web Availability & Latency Checker**
 A connectivity tool to check if a website is online and measure its response time.
 * **Features:**
@@ -63,8 +72,9 @@ A Python automation script that organizes files into folders based on file exten
 1. Copy the desired Python scripts (.py) and Batch files (.bat) to a local folder.
 2. For the **Currency Monitor** and **Web Monitor**, ensure you install the dependency: ```bash
 pip install requests
-4. Run the corresponding .bat file to execute the automation with one click.
+3. Run the corresponding .bat file to execute the automation with one click.
 
 🎯 **Purpose**
 
 These scripts were created for learning, practice, and portfolio purposes, simulating real-world IT Support and Infrastructure automation tasks.
+
