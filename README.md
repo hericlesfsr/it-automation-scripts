@@ -7,6 +7,16 @@ The tools are lightweight, portable, and focused on improving troubleshooting ef
 
 🚀 **Available Tools**
 
+🔹**NetPulse - Network Health Monitor**
+A real-time network stability tool that tracks latency and connection quality.
+* **Features:**
+    * Real-time Latency Tracking: Measures ping in milliseconds with high precision.
+    * Visual Status Alerts: Color-coded terminal output for Stable, High Latency, or Connection Drop.
+    * Audit Logging: Automatically saves all connection events to `networking_health.log`for troubleshooting.
+    * One-click Execution: Includes a .bat file to run the monitor in a dedicated window.
+* **What I learned:** System process interaction via `subprocess`, handling real-time data loops, and conditional status reporting.
+* **Files:** `netpulse_monitor.py`, `run_netpulse.bat`.
+
 🔹**Network Security Port Scanner**
 A security auditing tool designed to identify open ports and potential vulnerabilities in a network host.
 * **Features:**
@@ -64,7 +74,7 @@ A Python automation script that organizes files into folders based on file exten
 
 * **Python 3.x**
 * **Windows Batch (CMD)**
-* **Standard Libraries:** `os`, `shutil`, `socket`, `platform`, `datetime`.
+* **Standard Libraries:** `os`, `shutil`, `socket`, `platform`, `datetime`, `subprocess`, `time`.
 * **External Library:** `Requests` (used for API consumption).
 
 📖 **How to Use**
@@ -77,4 +87,5 @@ pip install requests
 🎯 **Purpose**
 
 These scripts were created for learning, practice, and portfolio purposes, simulating real-world IT Support and Infrastructure automation tasks.
+
 
