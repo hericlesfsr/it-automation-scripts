@@ -89,14 +89,15 @@ A Python automation script that organizes files into folders based on file exten
 
 📖 **How to Use**
 
-1. Clone the repository: ```bash
-git clone git clone https://github.com/hericlesfsr/it-automation-scripts.git
+1. Clone the repository: ```bash 
+git clone https://github.com/hericlesfsr/it-automation-scripts.git
 3. Install Dependencies: pip install requests
 4. Execution: Standard tools: Double-click the corresponding `.bat` file. // System Cleaner (Important): To allow the script to access protected system folders, right-click `run_cleanup.bat` and select "Run as Administrator".
 
 🎯 **Purpose**
 
 These scripts were created for learning, practice, and portfolio purposes, simulating real-world IT Support and Infrastructure automation tasks.
+
 
 
 
