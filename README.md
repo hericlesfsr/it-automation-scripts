@@ -22,7 +22,7 @@ A real-time network stability tool that tracks latency and connection quality.
 * **Features:**
     * Real-time Latency Tracking: Measures ping in milliseconds with high precision.
     * Visual Status Alerts: Color-coded terminal output for Stable, High Latency, or Connection Drop.
-    * Audit Logging: Automatically saves all connection events to `networking_health.log`for troubleshooting.
+    * Audit Logging: Automatically saves all connection events to `networking_health.log` for troubleshooting.
     * One-click Execution: Includes a .bat file to run the monitor in a dedicated window.
 * **What I learned:** System process interaction via `subprocess`, handling real-time data loops, and conditional status reporting.
 * **Files:** `netpulse_monitor.py`, `run_netpulse.bat`.
@@ -33,7 +33,7 @@ A security auditing tool designed to identify open ports and potential vulnerabi
     * Scans common service ports (SSH, HTTP, RDP, etc.).
     * Real-time connection testing using socket programming.
     * Generates security audit logs for compliance tracking.
-* **What I learned:** Networks protocols, socket timeouts, and handling network-level exceptioins.
+* **What I learned:** Networks protocols, socket timeouts, and handling network-level exceptions.
 * **Files:** `port_scanner.py`, `run_port_scanner.bat`.
 
 🔹 **Web Availability & Latency Checker**
@@ -96,4 +96,5 @@ A Python automation script that organizes files into folders based on file exten
 🎯 **Purpose**
 
 These scripts were created for learning, practice, and portfolio purposes, simulating real-world IT Support and Infrastructure automation tasks.
+
 
