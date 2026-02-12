@@ -7,6 +7,16 @@ The tools are lightweight, portable, and focused on improving troubleshooting ef
 
 🚀 **Available Tools**
 
+🔹**System Cleanup Automation (High Impact)**
+A powerful maintenance tool designed to wipe out temporary files and optimize Windows performance.
+* **Features:**
+    * Deep Scan: Targets multiple system and user temporary directories.
+    * Resilient Execution: Implements advanced exception handling (try/except) to bypass files currently in use by the OS without crashing.
+    * Privilege Awareness: Detects and reports missing Administrative rights for restricted folders.
+    * Automated Summary: Provides a final report of total items removed vs. items kept for security.
+* **What I learned:** Advanced file system manipulation, OS environment variables, and professional error handling for system-level scripts.
+* **Files:** `system_cleaner.py`, `run_cleanup.bat`
+
 🔹**NetPulse - Network Health Monitor**
 A real-time network stability tool that tracks latency and connection quality.
 * **Features:**
@@ -79,11 +89,11 @@ A Python automation script that organizes files into folders based on file exten
 
 📖 **How to Use**
 
-1. Copy the desired Python scripts (.py) and Batch files (.bat) to a local folder.
-2. For the **Currency Monitor** and **Web Monitor**, ensure you install the dependency: ```bash
-pip install requests
-3. Run the corresponding .bat file to execute the automation with one click.
+1. Clone the repository: ```bash git clone [https://github.com/hericlesfsr/it-automation-scripts.git](https://github.com/hericlesfsr/it-automation-scripts.git)
+2. Install Dependencies: pip install requests
+3. Execution: Standard tools: Double-click the corresponding `.bat` file. // System Cleaner (Important): To allow the script to access protected system folders, right-click `run_cleanup.bat` and select "Run as Administrator".
 
 🎯 **Purpose**
 
 These scripts were created for learning, practice, and portfolio purposes, simulating real-world IT Support and Infrastructure automation tasks.
+
