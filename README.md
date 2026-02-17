@@ -2,20 +2,37 @@
 
 📋 **Description**
 
-This repository contains a collection of Python automation scripts designed to assist IT Support and Infrastructure teams with common operational tasks such as system health checks, system information reporting, and file organization. 
+This repository contains a collection of Python automation scripts designed to assist IT Support and Infrastructure teams with common operational tasks such as system health checks, performance monitoring, and file organization.
 The tools are lightweight, portable, and focused on improving troubleshooting efficiency and operational productivity.
 
+---
+
 🚀 **Available Tools**
+
+🔹**System Resource Monitor (Real-Time Dashboard)**
+A real-time performance monitoring tool that displays CPU and RAM usage directly in the terminal using a visual dashboard.
+* **Features:**
+    * Real-time CPU and memory tracking
+    * Terminal dashboard with visual progress bars
+    * Automatic screen refresh for live monitoring
+    * Critical usage alerts for high resource consumption
+    * One-click execution via a .bat launcher
+* **What I learned:** System resource monitoring with external libraries, terminal visualization techniques, and real-time data loops.
+* **Files:** `resource_monitor.py`, `resource_dashboard.bat`
+
+---
 
 🔹**System Cleanup Automation (High Impact)**
 A powerful maintenance tool designed to wipe out temporary files and optimize Windows performance.
 * **Features:**
     * Deep Scan: Targets multiple system and user temporary directories.
-    * Resilient Execution: Implements advanced exception handling (try/except) to bypass files currently in use by the OS without crashing.
+    * Resilient Execution: Advanced exception handling to bypass files in use.
     * Privilege Awareness: Detects and reports missing Administrative rights for restricted folders.
     * Automated Summary: Provides a final report of total items removed vs. items kept for security.
 * **What I learned:** Advanced file system manipulation, OS environment variables, and professional error handling for system-level scripts.
 * **Files:** `system_cleaner.py`, `run_cleanup.bat`
+
+---
 
 🔹**NetPulse - Network Health Monitor**
 A real-time network stability tool that tracks latency and connection quality.
@@ -27,14 +44,18 @@ A real-time network stability tool that tracks latency and connection quality.
 * **What I learned:** System process interaction via `subprocess`, handling real-time data loops, and conditional status reporting.
 * **Files:** `netpulse_monitor.py`, `run_netpulse.bat`.
 
+---
+
 🔹**Network Security Port Scanner**
 A security auditing tool designed to identify open ports and potential vulnerabilities in a network host.
 * **Features:**
     * Scans common service ports (SSH, HTTP, RDP, etc.).
     * Real-time connection testing using socket programming.
     * Generates security audit logs for compliance tracking.
-* **What I learned:** Networks protocols, socket timeouts, and handling network-level exceptions.
+* **What I learned:** Network protocols, socket timeouts, and handling network-level exceptions.
 * **Files:** `port_scanner.py`, `run_port_scanner.bat`.
+
+---
 
 🔹 **Web Availability & Latency Checker**
 A connectivity tool to check if a website is online and measure its response time.
@@ -46,6 +67,8 @@ A connectivity tool to check if a website is online and measure its response tim
 * **What I learned:** Measuring execution time and managing connection timeouts.
 * **Files:** `web_monitor.py`, `run_web_monitor.bat`.
 
+---
+
 🔹 **Currency & Market Monitor**
 A real-time financial monitoring tool that connects to external APIs to fetch currency exchange rates.
 * **Features:**
@@ -54,6 +77,8 @@ A real-time financial monitoring tool that connects to external APIs to fetch cu
     * Automatic history logging in .txt format.
     * One-click execution via .bat file.
 * **Files:** `currency_monitor.py`, `run_monitor.bat`.
+
+---
 
 🔹 **System Health Check**
 A portable diagnostic tool developed in Python to perform quick system health checks.
@@ -64,6 +89,8 @@ A portable diagnostic tool developed in Python to perform quick system health ch
     * Portable execution via .bat file.
 * **Files:** `health_check.py`, `executar_check.bat`.
 
+---
+
 🔹 **System Information Reporter**
 Collects essential system information and generates a structured .txt report.
 * **Features:**
@@ -71,6 +98,8 @@ Collects essential system information and generates a structured .txt report.
     * Machine and network name.
     * Automatic report generation.
 * **Files:** `system_info.py`, `executar_info.bat`.
+
+---
 
 🔹 **File Organizer Tool**
 A Python automation script that organizes files into folders based on file extensions.
@@ -80,12 +109,16 @@ A Python automation script that organizes files into folders based on file exten
     * Moves files safely.
 * **Files:** `file_organizer.py`, `run_file_organizer.bat`.
 
+---
+
 🛠️ **Technologies**
 
 * **Python 3.x**
 * **Windows Batch (CMD)**
 * **Standard Libraries:** `os`, `shutil`, `socket`, `platform`, `datetime`, `subprocess`, `time`.
-* **External Library:** `Requests` (used for API consumption).
+* **External Library:** `requests`, `psutil`.
+
+---
 
 📖 **How to Use**
 
@@ -93,20 +126,30 @@ A Python automation script that organizes files into folders based on file exten
 ```bash 
 git clone https://github.com/hericlesfsr/it-automation-scripts.git
 ```
-3. Install Dependencies: 
+2. Install Dependencies: 
 ```bash
-pip install requests
+pip install requests psutil
 ```
-4. Execution: Standard tools: Double-click the corresponding `.bat` file. // System Cleaner (Important): To allow the script to access protected system folders, right-click `run_cleanup.bat` and select "Run as Administrator".
+3. Execution: Standard tools: 
+* **Standard tools: double-click the corresponding .bat file**
+* **System Cleaner: right-click run_cleanup.bat and select "Run as Administrator"**
+
+---
+
+👨‍💻 Who Is This For?
+
+This repository is ideal for:
+
+* **IT Support and Help Desk professionals**
+* **Junior System Administrators**
+* **Infrastructure and NOC analysts**
+* **Students building an automation portfolio**
+* **Anyone learning Python for real-world operational tasks**
+
+---
 
 🎯 **Purpose**
 
 These scripts were created for learning, practice, and portfolio purposes, simulating real-world IT Support and Infrastructure automation tasks.
 
-
-
-
-
-
-
-
+---
