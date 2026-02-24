@@ -9,6 +9,28 @@ The tools are lightweight, portable, and focused on improving troubleshooting ef
 
 🚀 **Available Tools**
 
+🔹**Smart Screenshot Organizer (Advanced Workflow)**
+A professional-grade automation tool designed to eliminate folder clutter by restructuring local files into a logical chronological hierarchy.
+* **Features:**
+    * Dynamic Path Discovery: Robust logic to identify OneDrive and local image directories across various Windows configurations.
+    * Smart Pattern Matching: Detects standard Windows capture naming conventions (e.g., "Captura de tela" and "Screenshot").
+    * Chronological Sorting: Automatically creates and moves files into month-based folders (e.g., 2026-02 (Prints)) based on file metadata.
+* **What I learned:** Abstract path management, system environment variables, and automated file-system restructuring.
+* **Files:** `screenshot_organizer.py`, `run_screenshot_org.bat`
+
+---
+
+🔹**Digital Integrity Auditor (Security Tool)**
+A security-focused utility that generates unique cryptographic signatures (SHA-256) to verify file authenticity and detect tampering.
+* **Features:**
+    * Cryptographic Precision: Uses the industry-standard SHA-256 algorithm for reliable integrity checks.
+    * Efficient Streaming: Processes files in 4096-byte chunks to handle large files (ISOs, Databases) without high memory consumption.
+    * Interactive CLI: Supports drag-and-drop input for rapid operational auditing.
+* **What I learned:** Cryptography concepts, binary data streaming, and interactive shell sanitization.
+* **Files:** `file_hasher.py`, `run_integrity_check.bat`
+
+---
+
 🔹**System Resource Monitor (Real-Time Dashboard)**
 A real-time performance monitoring tool that displays CPU and RAM usage directly in the terminal using a visual dashboard.
 * **Features:**
@@ -115,7 +137,7 @@ A Python automation script that organizes files into folders based on file exten
 
 * **Python 3.x**
 * **Windows Batch (CMD)**
-* **Standard Libraries:** `os`, `shutil`, `socket`, `platform`, `datetime`, `subprocess`, `time`.
+* **Standard Libraries:** `os`, `shutil`, `hashlib`, `socket`, `platform`, `datetime`, `subprocess`, `time`.
 * **External Library:** `requests`, `psutil`.
 
 ---
@@ -126,13 +148,15 @@ A Python automation script that organizes files into folders based on file exten
 ```bash 
 git clone https://github.com/hericlesfsr/it-automation-scripts.git
 ```
-2. Install Dependencies: 
+2. Setup Environment: It is highly recommended to use a virtual environment (`.venv`) for dependency isolation.
+3. Install Dependencies: 
 ```bash
 pip install requests psutil
 ```
-3. Execution: Standard tools: 
-* **Standard tools: double-click the corresponding .bat file**
-* **System Cleaner: right-click run_cleanup.bat and select "Run as Administrator"**
+4. **Execution:** 
+* **Standard tools:** Double-click the corresponding `.bat` file for automated execution via Python.
+* **System Cleaner:** Right-click `run_cleanup.bat` and select **"Run as Administrator"** to ensure full access to temporary system directories.
+* **Integrity Auditor:** Run `run_integrity_check.bat` and drag any file into the terminal to generate its SHA-256 signature.
 
 ---
 
