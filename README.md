@@ -1,4 +1,4 @@
-# IT Automation Scripts for IT Support
+# Python Automation & Operational Tools
 
 📋 **Description**
 
@@ -7,7 +7,29 @@ The tools are lightweight, portable, and focused on improving troubleshooting ef
 
 ---
 
-🚀 **Available Tools**
+🚀 **Projects**
+
+🔹**Payroll CLI System (Business Logic Simulation)**
+A command-line payroll processing system that models real-world Brazilian payroll rules with structured business logic and persistent logging.
+* **Features:**
+    * Gross Salary Calculation: Based on hourly rate and worked hours.
+    * Progressive INSS Calculation: Applies tier-based social security rates.
+    * IRRF Computation: Calculates income tax using base deduction rules.
+    * Union Fee Deduction: Automatic percentage-based calculation.
+    * Net Salary Output: Structured and formatted CLI display.
+    * Persistent Logging: Appends payroll records into a `.txt` file with timestamp.
+    * Multi-Employee Support: Loop-based execution for batch processing.
+    * One-click Execution: Includes `.bat` launcher for simplified runtime.
+* **What I learned:**
+    * Business rule modeling in Python
+    * Progressive tax logic implementation
+    * File handling using `with open()` context manager
+    * Data formatting and financial precision handling
+    * Timestamp logging with `datetime`
+    * Structured CLI user interaction
+* **Files:** `payroll_cli_v1.py`, `payroll_cli_v1.bat`
+
+---
 
 🔹**Smart Screenshot Organizer (Advanced Workflow)**
 A professional-grade automation tool designed to eliminate folder clutter by restructuring local files into a logical chronological hierarchy.
@@ -174,6 +196,7 @@ This repository is ideal for:
 
 🎯 **Purpose**
 
-These scripts were created for learning, practice, and portfolio purposes, simulating real-world IT Support and Infrastructure automation tasks.
+These projects simulate real-world operational scenarios in IT Support, Infrastructure, Security, and Business Logic environments, focusing on automation, efficiency, and reliability.
 
 ---
+
