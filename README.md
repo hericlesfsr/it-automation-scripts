@@ -9,6 +9,26 @@ The tools are lightweight, portable, and focused on improving troubleshooting ef
 
 🚀 **Projects**
 
+🔹 **CLI Ticket Management System (Help Desk Workflow Simulation)**  
+A command-line ticket management tool that simulates a basic Help Desk workflow.  
+It allows users to create, store, and list support tickets using persistent JSON storage.
+* **Features:**
+    * Ticket Creation: Register new support requests with title and description.
+    * JSON Storage: Saves all tickets in a structured `.json` file.
+    * Ticket Listing: Displays all registered tickets directly in the CLI.
+    * Menu-driven Interface: Simple interactive terminal navigation.
+    * Persistent Data: Tickets remain saved between executions.
+    * Lightweight Design: Runs entirely in the terminal without external dependencies.
+* **What I learned:**
+    * JSON data persistence in Python
+    * Structuring CLI applications
+    * Menu-driven program logic
+    * File reading and writing operations
+    * Handling user input and validation
+* **Files:** `ticket_system.py`, `tickets.json`
+
+---
+
 🔹**Payroll CLI System (Business Logic Simulation)**
 A command-line payroll processing system that models real-world Brazilian payroll rules with structured business logic and persistent logging.
 * **Features:**
@@ -199,4 +219,5 @@ This repository is ideal for:
 These projects simulate real-world operational scenarios in IT Support, Infrastructure, Security, and Business Logic environments, focusing on automation, efficiency, and reliability.
 
 ---
+
 
