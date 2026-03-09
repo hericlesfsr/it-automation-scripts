@@ -1,9 +1,76 @@
 # Python Automation and Operational Tools
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+![Automation](https://img.shields.io/badge/Focus-IT%20Automation-green)
+![Status](https://img.shields.io/badge/Project-Active-brightgreen)
 
 📋 **Description**
 
 This repository contains a collection of Python automation scripts designed to assist IT Support and Infrastructure teams with common operational tasks such as system health checks, performance monitoring, and file organization.
 The tools are lightweight, portable, and focused on improving troubleshooting efficiency and operational productivity.
+
+---
+
+## Repository Structure
+```
+it-automation-scripts
+│
+README.md
+│
+automation
+│   file_organizer.py
+│   run_file_organizer.bat
+│   screenshot_organizer.py
+│   run_screenshot_org.bat
+│
+system
+│   system_info.py
+│   executar_info.bat
+│   health_check.py
+│   executar_check.bat
+│   system_cleaner.py
+│   run_cleanup.bat
+│   host_inventory.py
+│   host_inventory.bat
+│
+network
+│   port_scanner.py
+│   run_port_scanner.bat
+│   netpulse_monitor.py
+│   run_netpulse.bat
+│   web_monitor.py
+│   run_web_monitor.bat
+│
+monitoring
+│   resource_monitor.py
+│   resource_dashboard.bat
+│
+security
+│   file_hasher.py
+│   run_integrity_check.bat
+│
+support
+│   support_ticket_manager.py
+│
+business
+│   payroll_cli_v1.py
+│   payroll_cli_v1.bat
+│
+finance
+│   currency_monitor.py
+│   run_monitor.bat
+```
+
+### Folder Overview
+
+- **automation** → file management and workflow automation scripts
+- **system** → system diagnostics, inventory, and maintenance tools
+- **network** → network monitoring and security utilities
+- **monitoring** → system resource monitoring tools
+- **security** → file integrity and auditing utilities
+- **support** → help desk workflow simulation tools
+- **business** → business logic simulation projects
+- **finance** → financial and market monitoring tools
 
 ---
 
@@ -45,11 +112,11 @@ It allows users to create, store, and list support tickets using persistent JSON
     * Menu-driven program logic
     * File reading and writing operations
     * Handling user input and validation
-* **Files:** `ticket_system.py`, `tickets.json`
+* **Files:** `support_ticket_manager.py`
 
 ---
 
-🔹**Payroll CLI System (Business Logic Simulation)**
+🔹 **Payroll CLI System (Business Logic Simulation)**
 A command-line payroll processing system that models real-world Brazilian payroll rules with structured business logic and persistent logging.
 * **Features:**
     * Gross Salary Calculation: Based on hourly rate and worked hours.
@@ -71,7 +138,7 @@ A command-line payroll processing system that models real-world Brazilian payrol
 
 ---
 
-🔹**Smart Screenshot Organizer (Advanced Workflow)**
+🔹 **Smart Screenshot Organizer (Advanced Workflow)**
 A professional-grade automation tool designed to eliminate folder clutter by restructuring local files into a logical chronological hierarchy.
 * **Features:**
     * Dynamic Path Discovery: Robust logic to identify OneDrive and local image directories across various Windows configurations.
@@ -82,7 +149,7 @@ A professional-grade automation tool designed to eliminate folder clutter by res
 
 ---
 
-🔹**Digital Integrity Auditor (Security Tool)**
+🔹 **Digital Integrity Auditor (Security Tool)**
 A security-focused utility that generates unique cryptographic signatures (SHA-256) to verify file authenticity and detect tampering.
 * **Features:**
     * Cryptographic Precision: Uses the industry-standard SHA-256 algorithm for reliable integrity checks.
@@ -93,7 +160,7 @@ A security-focused utility that generates unique cryptographic signatures (SHA-2
 
 ---
 
-🔹**System Resource Monitor (Real-Time Dashboard)**
+🔹 **System Resource Monitor (Real-Time Dashboard)**
 A real-time performance monitoring tool that displays CPU and RAM usage directly in the terminal using a visual dashboard.
 * **Features:**
     * Real-time CPU and memory tracking
@@ -106,7 +173,7 @@ A real-time performance monitoring tool that displays CPU and RAM usage directly
 
 ---
 
-🔹**System Cleanup Automation (High Impact)**
+🔹 **System Cleanup Automation (High Impact)**
 A powerful maintenance tool designed to wipe out temporary files and optimize Windows performance.
 * **Features:**
     * Deep Scan: Targets multiple system and user temporary directories.
@@ -118,7 +185,7 @@ A powerful maintenance tool designed to wipe out temporary files and optimize Wi
 
 ---
 
-🔹**NetPulse - Network Health Monitor**
+🔹 **NetPulse - Network Health Monitor**
 A real-time network stability tool that tracks latency and connection quality.
 * **Features:**
     * Real-time Latency Tracking: Measures ping in milliseconds with high precision.
@@ -126,18 +193,18 @@ A real-time network stability tool that tracks latency and connection quality.
     * Audit Logging: Automatically saves all connection events to `networking_health.log` for troubleshooting.
     * One-click Execution: Includes a .bat file to run the monitor in a dedicated window.
 * **What I learned:** System process interaction via `subprocess`, handling real-time data loops, and conditional status reporting.
-* **Files:** `netpulse_monitor.py`, `run_netpulse.bat`.
+* **Files:** `netpulse_monitor.py`, `run_netpulse.bat`
 
 ---
 
-🔹**Network Security Port Scanner**
+🔹 **Network Security Port Scanner**
 A security auditing tool designed to identify open ports and potential vulnerabilities in a network host.
 * **Features:**
     * Scans common service ports (SSH, HTTP, RDP, etc.).
     * Real-time connection testing using socket programming.
     * Generates security audit logs for compliance tracking.
 * **What I learned:** Network protocols, socket timeouts, and handling network-level exceptions.
-* **Files:** `port_scanner.py`, `run_port_scanner.bat`.
+* **Files:** `port_scanner.py`, `run_port_scanner.bat`
 
 ---
 
@@ -147,9 +214,9 @@ A connectivity tool to check if a website is online and measure its response tim
     * Checks if a URL is up (Online/Offline status).
     * Measures latency (ping) in milliseconds.
     * Performs multiple attempts with timed intervals.
-    * Automatic logging of results in `web_monitor_log.txt`.
+    * Automatic logging of results in `web_monitor_log.txt`
 * **What I learned:** Measuring execution time and managing connection timeouts.
-* **Files:** `web_monitor.py`, `run_web_monitor.bat`.
+* **Files:** `web_monitor.py`, `run_web_monitor.bat`
 
 ---
 
@@ -160,7 +227,7 @@ A real-time financial monitoring tool that connects to external APIs to fetch cu
     * Integration with REST APIs (JSON handling).
     * Automatic history logging in .txt format.
     * One-click execution via .bat file.
-* **Files:** `currency_monitor.py`, `run_monitor.bat`.
+* **Files:** `currency_monitor.py`, `run_monitor.bat`
 
 ---
 
@@ -171,7 +238,7 @@ A portable diagnostic tool developed in Python to perform quick system health ch
     * Verifies internet connectivity.
     * Designed for fast troubleshooting.
     * Portable execution via .bat file.
-* **Files:** `health_check.py`, `executar_check.bat`.
+* **Files:** `health_check.py`, `executar_check.bat`
 
 ---
 
@@ -181,7 +248,7 @@ Collects essential system information and generates a structured .txt report.
     * OS information and CPU details.
     * Machine and network name.
     * Automatic report generation.
-* **Files:** `system_info.py`, `executar_info.bat`.
+* **Files:** `system_info.py`, `executar_info.bat`
 
 ---
 
@@ -191,7 +258,7 @@ A Python automation script that organizes files into folders based on file exten
     * Automatically detects file extensions.
     * Creates destination folders dynamically.
     * Moves files safely.
-* **Files:** `file_organizer.py`, `run_file_organizer.bat`.
+* **Files:** `file_organizer.py`, `run_file_organizer.bat`
 
 ---
 
@@ -199,8 +266,8 @@ A Python automation script that organizes files into folders based on file exten
 
 * **Python 3.x**
 * **Windows Batch (CMD)**
-* **Standard Libraries:** `os`, `shutil`, `hashlib`, `socket`, `platform`, `datetime`, `subprocess`, `time`.
-* **External Library:** `requests`, `psutil`.
+* **Standard Libraries:** `os`, `shutil`, `hashlib`, `socket`, `platform`, `datetime`, `subprocess`, `time`
+* **External Library:** `requests`, `psutil`
 
 ---
 
@@ -239,6 +306,7 @@ This repository is ideal for:
 These projects simulate real-world operational scenarios in IT Support, Infrastructure, Security, and Business Logic environments, focusing on automation, efficiency, and reliability.
 
 ---
+
 
 
 
