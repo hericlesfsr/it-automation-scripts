@@ -1,4 +1,4 @@
-# Python Automation & Operational Tools
+# Python Automation and Operational Tools
 
 📋 **Description**
 
@@ -239,6 +239,7 @@ This repository is ideal for:
 These projects simulate real-world operational scenarios in IT Support, Infrastructure, Security, and Business Logic environments, focusing on automation, efficiency, and reliability.
 
 ---
+
 
 
 
