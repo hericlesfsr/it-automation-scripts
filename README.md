@@ -9,6 +9,26 @@ The tools are lightweight, portable, and focused on improving troubleshooting ef
 
 🚀 **Projects**
 
+🔹 **Host Inventory CLI Tool**
+A lightweight command-line tool that collects basic system information from the local machine and generates a structured inventory report.
+
+* **Features:**
+    * Hostname Detection: Automatically retrieves the computer name.
+    * Local IP Identification: Captures the machine's current IP address.
+    * Operating System Info: Displays OS name and version.
+    * Logged-in User Detection: Identifies the active system user.
+    * Automatic Report Generation: Exports the collected information into a `.txt` inventory file.
+    * Lightweight Execution: Runs instantly from the terminal with no external dependencies.
+* **What I learned:**
+    * Working with Python standard libraries (`socket`, `platform`, `os`)
+    * Collecting system-level information programmatically
+    * Structuring CLI scripts with functions
+    * File creation and writing using `with open()`
+    * Formatting terminal output for readability
+* **Files:** `host_inventory.py`, `host_inventory.bat`
+
+---
+
 🔹 **CLI Ticket Management System (Help Desk Workflow Simulation)**  
 A command-line ticket management tool that simulates a basic Help Desk workflow.  
 It allows users to create, store, and list support tickets using persistent JSON storage.
@@ -219,5 +239,6 @@ This repository is ideal for:
 These projects simulate real-world operational scenarios in IT Support, Infrastructure, Security, and Business Logic environments, focusing on automation, efficiency, and reliability.
 
 ---
+
 
 
