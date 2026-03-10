@@ -329,5 +329,6 @@ This repository is ideal for:
 
 These projects simulate real-world operational scenarios in IT Support, Infrastructure, Security, and Business Logic environments.
 
-The main objective is to demonstrate practical automation skills using Python to improve operational efficiency, troubleshooting workflows, and system observability.
+The main objective is to demonstrate practical automation skills using Python to improve operational efficiency, troubleshooting workflows, and system observability
+
 ---
