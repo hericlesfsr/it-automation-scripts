@@ -32,7 +32,6 @@ system
 │   system_cleaner.py
 │   run_cleanup.bat
 │   host_inventory.py
-│   host_inventory.bat
 │
 network
 │   port_scanner.py
@@ -332,3 +331,4 @@ These projects simulate real-world operational scenarios in IT Support, Infrastr
 The main objective is to demonstrate practical automation skills using Python to improve operational efficiency, troubleshooting workflows, and system observability
 
 ---
+
