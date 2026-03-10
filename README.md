@@ -6,8 +6,9 @@
 
 📋 **Description**
 
-This repository contains a collection of Python automation scripts designed to assist IT Support and Infrastructure teams with common operational tasks such as system health checks, performance monitoring, and file organization.
-The tools are lightweight, portable, and focused on improving troubleshooting efficiency and operational productivity.
+This repository contains a collection of **Python automation tools** designed to assist IT Support, Infrastructure, and Operations teams with common operational tasks such as system diagnostics, monitoring, and workflow automation.
+
+The tools are lightweight, portable, and focused on improving troubleshooting efficiency and operational productivity in real-world IT environments.
 
 ---
 
@@ -75,6 +76,29 @@ finance
 ---
 
 🚀 **Projects**
+Below are some of the automation tools included in this repository.
+
+---
+
+🔹 **Log Analyzer Tool**
+A lightweight CLI tool that scans system log files and extracts operational events such as errors, warnings, and failed login attempts.
+
+* **Features:**
+    * Log Parsing: Reads log files line by line.
+    * Error Detection: Counts occurrences of "error".
+    * Warning Detection: Identifies warning events.
+    * Failed Login Detection: Tracks authentication failures.
+    * Report Generation: Generates a structured `log_report.txt` summary.
+
+* **What I learned:**
+    * Text parsing in Python
+    * File reading and iteration
+    * Pattern detection in log files
+    * Report generation and file writing
+
+* **File:** `log_analyzer.py`
+
+---
 
 🔹 **Host Inventory CLI Tool**
 A lightweight command-line tool that collects basic system information from the local machine and generates a structured inventory report.
@@ -188,10 +212,9 @@ A powerful maintenance tool designed to wipe out temporary files and optimize Wi
 🔹 **NetPulse - Network Health Monitor**
 A real-time network stability tool that tracks latency and connection quality.
 * **Features:**
-    * Real-time Latency Tracking: Measures ping in milliseconds with high precision.
-    * Visual Status Alerts: Color-coded terminal output for Stable, High Latency, or Connection Drop.
-    * Audit Logging: Automatically saves all connection events to `networking_health.log` for troubleshooting.
-    * One-click Execution: Includes a .bat file to run the monitor in a dedicated window.
+    * Real-time Latency Tracking: Measures ping in milliseconds.
+    * Visual Status Alerts: Terminal indicators for Stable, High Latency, or Connection Drop.
+    * Event Logging: Saves connection events to `network_health.log` for troubleshooting.
 * **What I learned:** System process interaction via `subprocess`, handling real-time data loops, and conditional status reporting.
 * **Files:** `netpulse_monitor.py`, `run_netpulse.bat`
 
@@ -266,8 +289,8 @@ A Python automation script that organizes files into folders based on file exten
 
 * **Python 3.x**
 * **Windows Batch (CMD)**
-* **Standard Libraries:** `os`, `shutil`, `hashlib`, `socket`, `platform`, `datetime`, `subprocess`, `time`
-* **External Library:** `requests`, `psutil`
+* **Core Libraries:** `os`, `shutil`, `hashlib`, `socket`, `platform`, `datetime`, `subprocess`, `time`
+* **External Libraries:** `requests`, `psutil`
 
 ---
 
@@ -277,7 +300,8 @@ A Python automation script that organizes files into folders based on file exten
 ```bash 
 git clone https://github.com/hericlesfsr/it-automation-scripts.git
 ```
-2. Setup Environment: It is highly recommended to use a virtual environment (`.venv`) for dependency isolation.
+2. Setup Environment:
+It is highly recommended to use a virtual environment (`.venv`) for dependency isolation.
 3. Install Dependencies: 
 ```bash
 pip install requests psutil
@@ -303,11 +327,7 @@ This repository is ideal for:
 
 🎯 **Purpose**
 
-These projects simulate real-world operational scenarios in IT Support, Infrastructure, Security, and Business Logic environments, focusing on automation, efficiency, and reliability.
+These projects simulate real-world operational scenarios in IT Support, Infrastructure, Security, and Business Logic environments.
 
+The main objective is to demonstrate practical automation skills using Python to improve operational efficiency, troubleshooting workflows, and system observability.
 ---
-
-
-
-
-
