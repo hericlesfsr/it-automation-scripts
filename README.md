@@ -59,6 +59,7 @@ business
 finance
 │   currency_monitor.py
 │   run_monitor.bat
+|   expense_tracker_cli.py
 ```
 
 ### Folder Overview
@@ -76,6 +77,29 @@ finance
 
 🚀 **Projects**
 Below are some of the automation tools included in this repository.
+
+---
+
+---
+
+🔹 **Personal Expense Tracker (CLI Finance Tool)**  
+A command-line personal expense tracking tool that allows users to register daily expenses and automatically generate a structured financial log file.
+
+* **Features:**
+    * Expense Registration: Users can input expense description and value.
+    * Timestamp Logging: Automatically records date and time for each entry.
+    * Persistent Storage: Saves all expenses into a `.txt` file.
+    * Continuous Input Mode: Allows multiple entries during the same session.
+    * Lightweight CLI Interface: Runs directly in the terminal with no dependencies.
+
+* **What I learned:**
+    * File persistence using `with open()` in append mode
+    * Working with timestamps using `datetime`
+    * Handling user input and validation
+    * Structuring simple financial logging tools
+    * Designing practical CLI utilities
+
+* **Files:** `expense_tracker_cli.py`, `expense_tracker_cli.bat`
 
 ---
 
