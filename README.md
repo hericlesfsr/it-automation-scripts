@@ -81,28 +81,34 @@ office_automation
 ---
 
 🚀 **Projects**
+
 Below are some of the automation tools included in this repository.
 
 ---
 
-🔹 **Excel Sales Report Email Automation**  
-A Python automation script that processes sales data from an Excel file, generates summarized reports per store, and automatically sends the results via Outlook email using formatted HTML tables.
+🔹 **Excel Sales Report Automation**
+
+A Python automation script that reads a sales spreadsheet, calculates store performance metrics, and automatically sends a formatted HTML report via Outlook.
 
 * **Features:**
-    * Excel Data Processing: Reads structured sales data from an `.xlsx` file using `pandas`.
-    * Data Aggregation: Calculates revenue, quantity sold, and average ticket per store.
-    * Automated Reporting: Converts summarized data into formatted HTML tables.
-    * Email Automation: Sends the report automatically using Microsoft Outlook integration.
-    * Clean Formatting: Currency formatting adapted to Brazilian Real (R$).
+    * Reads structured sales data from an Excel spreadsheet using `pandas`
+    * Calculates total revenue per store
+    * Calculates quantity of items sold
+    * Computes average ticket value per store
+    * Generates formatted HTML tables for reporting
+    * Automatically sends the report via Outlook email
 
 * **What I learned:**
-    * Working with Excel files using `pandas`
-    * Data aggregation with `groupby`
-    * Automating Outlook email with `win32com`
-    * Generating HTML tables from DataFrames
-    * Building automated reporting workflows
+    * Data analysis with `pandas`
+    * Excel file processing using `read_excel()`
+    * Data grouping and aggregation with `groupby()`
+    * HTML report generation from DataFrames
+    * Outlook automation using `pywin32`
 
-* **Files:** `excel_sales_report_email.py`
+*Note:*  
+The initial concept was learned during a Python automation lesson from Hashtag Programação and later improved with additional formatting, HTML styling and data presentation adjustments.
+
+* **Files:** `excel_sales_report.py`
 
 ---
 
