@@ -60,6 +60,10 @@ finance
 │   currency_monitor.py
 │   run_monitor.bat
 |   expense_tracker_cli.py
+|
+office_automation
+│   excel_sales_report_email.py
+|
 ```
 
 ### Folder Overview
@@ -72,6 +76,7 @@ finance
 - **support** → help desk workflow simulation tools
 - **business** → business logic simulation projects
 - **finance** → financial and market monitoring tools
+- **office_automation** → automation of office workflows such as Excel processing and email reporting
 
 ---
 
@@ -79,6 +84,25 @@ finance
 Below are some of the automation tools included in this repository.
 
 ---
+
+🔹 **Excel Sales Report Email Automation**  
+A Python automation script that processes sales data from an Excel file, generates summarized reports per store, and automatically sends the results via Outlook email using formatted HTML tables.
+
+* **Features:**
+    * Excel Data Processing: Reads structured sales data from an `.xlsx` file using `pandas`.
+    * Data Aggregation: Calculates revenue, quantity sold, and average ticket per store.
+    * Automated Reporting: Converts summarized data into formatted HTML tables.
+    * Email Automation: Sends the report automatically using Microsoft Outlook integration.
+    * Clean Formatting: Currency formatting adapted to Brazilian Real (R$).
+
+* **What I learned:**
+    * Working with Excel files using `pandas`
+    * Data aggregation with `groupby`
+    * Automating Outlook email with `win32com`
+    * Generating HTML tables from DataFrames
+    * Building automated reporting workflows
+
+* **Files:** `excel_sales_report_email.py`
 
 ---
 
@@ -313,7 +337,7 @@ A Python automation script that organizes files into folders based on file exten
 * **Python 3.x**
 * **Windows Batch (CMD)**
 * **Core Libraries:** `os`, `shutil`, `hashlib`, `socket`, `platform`, `datetime`, `subprocess`, `time`
-* **External Libraries:** `requests`, `psutil`
+* **External Libraries: `requests`, `psutil`, `pandas`, `pywin32`
 
 ---
 
