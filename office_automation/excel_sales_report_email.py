@@ -1,8 +1,13 @@
 """
 Excel Sales Report Automation
 
-Reads sales data from Excel, calculates metrics, 
+Reads sales data from Excel, calculates store metrics,
 and automatically sends a formatted report via Outlook email.
+
+This project was originally based on a Python automation lesson
+from the Hashtag Programação channel. The script was later
+improved with additional formatting, HTML structure adjustments,
+and data presentation enhancements.
 
 Technologies:
 - Python
