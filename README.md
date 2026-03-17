@@ -86,29 +86,27 @@ Below are some of the automation tools included in this repository.
 
 ---
 
-🔹 **Excel Sales Report Automation**
+🔹 **Sales Report Automation (Excel → Email)**
 
 A Python automation script that reads a sales spreadsheet, calculates store performance metrics, and automatically sends a formatted HTML report via Outlook.
 
 * **Features:**
     * Reads structured sales data from an Excel spreadsheet using `pandas`
     * Calculates total revenue per store
-    * Calculates quantity of items sold
+    * Calculates quantity of items sold per store
     * Computes average ticket value per store
-    * Generates formatted HTML tables for reporting
-    * Automatically sends the report via Outlook email
+    * Generates structured HTML tables for reporting
+    * Automatically sends the report via Outlook email using pywin32
 
 * **What I learned:**
-    * Data analysis with `pandas`
-    * Excel file processing using `read_excel()`
-    * Data grouping and aggregation with `groupby()`
-    * HTML report generation from DataFrames
-    * Outlook automation using `pywin32`
+    * Data analysis and manipulation with `pandas`
+    * Processing Excel files using `read_excel()`
+    * Data aggregation with operations `groupby()`
+    * Converting DataFrames into HTML reports
+    * Automating Outlook email workflows with `pywin32`
+    * Structuring automation scripts for operational reporting
 
-*Note:*  
-The initial concept was learned during a Python automation lesson from Hashtag Programação and later improved with additional formatting, HTML styling and data presentation adjustments.
-
-* **Files:** `excel_sales_report.py`
+* **Files:** `excel_sales_report_email.py`
 
 ---
 
