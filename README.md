@@ -21,36 +21,8 @@ README.md
 automation
 │   file_organizer.py
 │   run_file_organizer.bat
-│   screenshot_organizer.py
 │   run_screenshot_org.bat
-│
-system
-│   system_info.py
-│   executar_info.bat
-│   health_check.py
-│   executar_check.bat
-│   system_cleaner.py
-│   run_cleanup.bat
-│   host_inventory.py
-│
-network
-│   port_scanner.py
-│   run_port_scanner.bat
-│   netpulse_monitor.py
-│   run_netpulse.bat
-│   web_monitor.py
-│   run_web_monitor.bat
-│
-monitoring
-│   resource_monitor.py
-│   resource_dashboard.bat
-│
-security
-│   file_hasher.py
-│   run_integrity_check.bat
-│
-support
-│   support_ticket_manager.py
+│   screenshot_organizer.py
 │
 business
 │   payroll_cli_v1.py
@@ -58,12 +30,42 @@ business
 │
 finance
 │   currency_monitor.py
-│   run_monitor.bat
 |   expense_tracker_cli.py
+│   run_monitor.bat
 |
+monitoring
+│   log_analyzer.py
+│   resource_monitor.py
+│   resource_dashboard.bat
+│
+network
+│   netpulse_monitor.py
+│   port_scanner.py
+│   run_netpulse.bat
+│   run_port_scanner.bat
+│   run_web_monitor.bat
+│   web_monitor.py
+│
 office_automation
 │   excel_sales_report_email.py
 |
+security
+│   file_hasher.py
+│   run_integrity_check.bat
+│
+support
+│   support_ticket_manager.py
+│
+system
+│   executar_check.bat
+│   executar_info.bat
+│   health_check.py
+│   host_inventory.bat
+│   host_inventory.py
+│   run_cleanup.bat
+│   system_cleaner.py
+│   system_info.py
+│
 ```
 
 ### Folder Overview
