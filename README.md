@@ -37,7 +37,8 @@ monitoring
 │   log_analyzer.py
 │   resource_monitor.py
 │   resource_dashboard.bat
-│
+│   disk_usage_audit.py
+|
 network
 │   netpulse_monitor.py
 │   port_scanner.py
@@ -85,6 +86,30 @@ system
 🚀 **Projects**
 
 Below are some of the automation tools included in this repository.
+
+---
+
+🔹 **Disk Usage Analyzer (Folder → TXT Report)**
+
+A Python automation script that scans a directory, calculates the size of each subfolder, sorts them by size, and generates a timestamped text report.
+
+* **Features:**
+    * Recursively calculates folder sizes using `os.walk()`
+    * Converts sizes to human-readable format (MB/GB)
+    * Sorts folders by total size in descending order
+    * Prints a clear summary in the console
+    * Generates a timestamped `.txt` report with all folder sizes
+    * Automatically sends the report via Outlook email using pywin32
+
+* **What I learned:**
+    * Working with filesystem operations using `os`
+    * Recursive folder traversal and file size calculations
+    * Formatting numbers for human-readable output
+    * Generating automated reports with dynamic filenames
+    * Sorting data programmatically before reporting
+    * Structuring a Python script for practical automation tasks
+
+* **Files:** `disk_usage_analyzer.py`
 
 ---
 
