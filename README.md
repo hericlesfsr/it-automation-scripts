@@ -19,6 +19,7 @@ it-automation-scripts
 README.md
 │
 automation
+|   backup_automation.py
 │   file_organizer.py
 │   run_file_organizer.bat
 │   run_screenshot_org.bat
@@ -86,6 +87,29 @@ system
 🚀 **Projects**
 
 Below are some of the automation tools included in this repository.
+
+---
+
+🔹 **Automated File Backup Tool**
+
+A Python automation script that creates full copies of selected folders and stores them as timestamped backups in a destination path.
+
+* **Features:**
+    * Copies complete folders and subfolders automatically
+    * Creates unique backup names with date and time
+    * Preserves previous backup versions
+    * Simple CLI execution through terminal input
+    * Validates source and destination paths before running
+    * Displays final backup location after completion
+
+* **What I learned:**
+    * File and folder operations using `shutil.copytree()`
+    * Path handling with `os.path`
+    * Working with timestamps using `datetime`
+    * Input validation for safer automation scripts
+    * Structuring practical backup workflows in Python
+
+* **Files:** `backup_automation.py`
 
 ---
 
