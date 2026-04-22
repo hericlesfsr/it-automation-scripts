@@ -1,56 +1,80 @@
-# Python Automation and Operational Tools
+# IT Automation Scripts | Python Portfolio for Support, Infrastructure & Operations
+
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 ![Automation](https://img.shields.io/badge/Focus-IT%20Automation-green)
 ![Status](https://img.shields.io/badge/Project-Active-brightgreen)
 
-📋 **Description**
+## 📌 Overview
 
-This repository contains a collection of **Python automation tools** designed to assist IT Support, Infrastructure, and Operations teams with common operational tasks such as system diagnostics, monitoring, and workflow automation.
+This repository contains a collection of practical **Python automation tools** focused on real-world IT operations.
 
-The tools are lightweight, portable, and focused on improving troubleshooting efficiency and operational productivity in real-world IT environments.
+Projects were developed to simulate and solve common tasks related to:
+
+- IT Support  
+- Infrastructure  
+- Monitoring  
+- Help Desk  
+- File Management  
+- Reporting  
+- Operational Productivity  
+
+All tools are lightweight, objective, and designed for Windows environments.
 
 ---
 
-## Repository Structure
-```
+## 🚀 Highlights
+
+✔ 18+ Practical Python Projects  
+✔ Real Operational Use Cases  
+✔ CLI Tools & Automation Scripts  
+✔ Monitoring / Reports / Logging  
+✔ Support & Infrastructure Focus  
+✔ Constantly Updated Portfolio
+
+---
+
+## 📁 Repository Structure
+
+```text
 it-automation-scripts
 │
 README.md
 │
 automation
-|   backup_automation.py
+│   backup_automation.py
 │   file_organizer.py
+│   screenshot_organizer.py
 │   run_file_organizer.bat
 │   run_screenshot_org.bat
-│   screenshot_organizer.py
 │
 business
+│   attendance_logger.py
 │   payroll_cli_v1.py
 │   payroll_cli_v1.bat
 │
 finance
 │   currency_monitor.py
-|   expense_tracker_cli.py
+│   expense_tracker_cli.py
 │   run_monitor.bat
-|
+│
 monitoring
+│   disk_usage_audit.py
 │   log_analyzer.py
 │   resource_monitor.py
 │   resource_dashboard.bat
-│   disk_usage_audit.py
-|
+│
 network
 │   netpulse_monitor.py
 │   port_scanner.py
+│   web_monitor.py
 │   run_netpulse.bat
 │   run_port_scanner.bat
 │   run_web_monitor.bat
-│   web_monitor.py
 │
 office_automation
 │   excel_sales_report_email.py
-|
+│
 security
 │   file_hasher.py
 │   run_integrity_check.bat
@@ -59,379 +83,235 @@ support
 │   support_ticket_manager.py
 │
 system
-│   executar_check.bat
-│   executar_info.bat
 │   health_check.py
-│   host_inventory.bat
 │   host_inventory.py
-│   run_cleanup.bat
 │   system_cleaner.py
 │   system_info.py
-│
+│   executar_check.bat
+│   executar_info.bat
+│   host_inventory.bat
+│   run_cleanup.bat
 ```
 
-### Folder Overview
+---
 
-- **automation** → file management and workflow automation scripts
-- **system** → system diagnostics, inventory, and maintenance tools
-- **network** → network monitoring and security utilities
-- **monitoring** → system resource monitoring tools
-- **security** → file integrity and auditing utilities
-- **support** → help desk workflow simulation tools
-- **business** → business logic simulation projects
-- **finance** → financial and market monitoring tools
-- **office_automation** → automation of office workflows such as Excel processing and email reporting
+## 📂 Folder Overview
+
+- **automation** → file management and workflow automation scripts  
+- **business** → business logic and administrative tools  
+- **finance** → financial monitoring and expense tools  
+- **monitoring** → logs, resource usage, disk analysis  
+- **network** → connectivity, scanning, latency and uptime tools  
+- **office_automation** → Excel processing and email automation  
+- **security** → integrity verification and auditing tools  
+- **support** → help desk workflow simulation  
+- **system** → diagnostics, maintenance and inventory scripts  
 
 ---
 
-🚀 **Projects**
+## 🛠️ Featured Projects
 
-Below are some of the automation tools included in this repository.
+### 🔹 Employee Attendance Logger
 
----
+A command-line attendance tool that registers employee check-ins with automatic timestamps and stores records in `.txt` files.
 
-🔹 **Automated File Backup Tool**
+**Skills Demonstrated:**
 
-A Python automation script that creates full copies of selected folders and stores them as timestamped backups in a destination path.
+- `while True` loops  
+- Input validation  
+- File persistence  
+- Timestamp automation  
 
-* **Features:**
-    * Copies complete folders and subfolders automatically
-    * Creates unique backup names with date and time
-    * Preserves previous backup versions
-    * Simple CLI execution through terminal input
-    * Validates source and destination paths before running
-    * Displays final backup location after completion
-
-* **What I learned:**
-    * File and folder operations using `shutil.copytree()`
-    * Path handling with `os.path`
-    * Working with timestamps using `datetime`
-    * Input validation for safer automation scripts
-    * Structuring practical backup workflows in Python
-
-* **Files:** `backup_automation.py`
+**Files:** `attendance_logger.py`
 
 ---
 
-🔹 **Disk Usage Analyzer (Folder → TXT Report)**
+### 🔹 Automated File Backup Tool
 
-A Python automation script that scans a directory, calculates the size of each subfolder, sorts them by size, and generates a timestamped text report.
+Creates full folder backups with timestamped names to preserve previous versions.
 
-* **Features:**
-    * Recursively calculates folder sizes using `os.walk()`
-    * Converts sizes to human-readable format (MB/GB)
-    * Sorts folders by total size in descending order
-    * Prints a clear summary in the console
-    * Generates a timestamped `.txt` report with all folder sizes
-    * Automatically sends the report via Outlook email using pywin32
+**Skills Demonstrated:**
 
-* **What I learned:**
-    * Working with filesystem operations using `os`
-    * Recursive folder traversal and file size calculations
-    * Formatting numbers for human-readable output
-    * Generating automated reports with dynamic filenames
-    * Sorting data programmatically before reporting
-    * Structuring a Python script for practical automation tasks
+- `shutil.copytree()`  
+- Path validation  
+- Backup workflow logic  
+- File system automation  
 
-* **Files:** `disk_usage_analyzer.py`
+**Files:** `backup_automation.py`
 
 ---
 
-🔹 **Sales Report Automation (Excel → Email)**
+### 🔹 Disk Usage Analyzer
 
-A Python automation script that reads a sales spreadsheet, calculates store performance metrics, and automatically sends a formatted HTML report via Outlook.
+Scans folders, calculates size usage, sorts results, and exports reports.
 
-* **Features:**
-    * Reads structured sales data from an Excel spreadsheet using `pandas`
-    * Calculates total revenue per store
-    * Calculates quantity of items sold per store
-    * Computes average ticket value per store
-    * Generates structured HTML tables for reporting
-    * Automatically sends the report via Outlook email using pywin32
+**Skills Demonstrated:**
 
-* **What I learned:**
-    * Data analysis and manipulation with `pandas`
-    * Processing Excel files using `read_excel()`
-    * Data aggregation with operations `groupby()`
-    * Converting DataFrames into HTML reports
-    * Automating Outlook email workflows with `pywin32`
-    * Structuring automation scripts for operational reporting
+- Recursive scanning  
+- `os.walk()`  
+- Human-readable formatting  
+- Reporting automation  
 
-* **Files:** `excel_sales_report_email.py`
+**Files:** `disk_usage_audit.py`
 
 ---
 
-🔹 **Personal Expense Tracker (CLI Finance Tool)**  
-A command-line personal expense tracking tool that allows users to register daily expenses and automatically generate a structured financial log file.
+### 🔹 Sales Report Automation
 
-* **Features:**
-    * Expense Registration: Users can input expense description and value.
-    * Timestamp Logging: Automatically records date and time for each entry.
-    * Persistent Storage: Saves all expenses into a `.txt` file.
-    * Continuous Input Mode: Allows multiple entries during the same session.
-    * Lightweight CLI Interface: Runs directly in the terminal with no dependencies.
+Reads Excel spreadsheets, calculates KPIs, and sends Outlook email reports.
 
-* **What I learned:**
-    * File persistence using `with open()` in append mode
-    * Working with timestamps using `datetime`
-    * Handling user input and validation
-    * Structuring simple financial logging tools
-    * Designing practical CLI utilities
+**Skills Demonstrated:**
 
-* **Files:** `expense_tracker_cli.py`, `expense_tracker_cli.bat`
+- `pandas`  
+- Data aggregation  
+- HTML reports  
+- Outlook automation  
+
+**Files:** `excel_sales_report_email.py`
 
 ---
 
-🔹 **Log Analyzer Tool**
-A lightweight CLI tool that scans system log files and extracts operational events such as errors, warnings, and failed login attempts.
+### 🔹 Support Ticket Manager
 
-* **Features:**
-    * Log Parsing: Reads log files line by line.
-    * Error Detection: Counts occurrences of "error".
-    * Warning Detection: Identifies warning events.
-    * Failed Login Detection: Tracks authentication failures.
-    * Report Generation: Generates a structured `log_report.txt` summary.
+CLI Help Desk workflow using persistent JSON storage.
 
-* **What I learned:**
-    * Text parsing in Python
-    * File reading and iteration
-    * Pattern detection in log files
-    * Report generation and file writing
+**Skills Demonstrated:**
 
-* **File:** `log_analyzer.py`
+- CRUD logic  
+- JSON persistence  
+- Menu systems  
+
+**Files:** `support_ticket_manager.py`
 
 ---
 
-🔹 **Host Inventory CLI Tool**
-A lightweight command-line tool that collects basic system information from the local machine and generates a structured inventory report.
+### 🔹 Network Port Scanner
 
-* **Features:**
-    * Hostname Detection: Automatically retrieves the computer name.
-    * Local IP Identification: Captures the machine's current IP address.
-    * Operating System Info: Displays OS name and version.
-    * Logged-in User Detection: Identifies the active system user.
-    * Automatic Report Generation: Exports the collected information into a `.txt` inventory file.
-    * Lightweight Execution: Runs instantly from the terminal with no external dependencies.
-* **What I learned:**
-    * Working with Python standard libraries (`socket`, `platform`, `os`)
-    * Collecting system-level information programmatically
-    * Structuring CLI scripts with functions
-    * File creation and writing using `with open()`
-    * Formatting terminal output for readability
-* **Files:** `host_inventory.py`, `host_inventory.bat`
+Scans common ports and identifies open services.
+
+**Skills Demonstrated:**
+
+- `socket`  
+- Network logic  
+- Security auditing  
+
+**Files:** `port_scanner.py`
 
 ---
 
-🔹 **CLI Ticket Management System (Help Desk Workflow Simulation)**  
-A command-line ticket management tool that simulates a basic Help Desk workflow.  
-It allows users to create, store, and list support tickets using persistent JSON storage.
-* **Features:**
-    * Ticket Creation: Register new support requests with title and description.
-    * JSON Storage: Saves all tickets in a structured `.json` file.
-    * Ticket Listing: Displays all registered tickets directly in the CLI.
-    * Menu-driven Interface: Simple interactive terminal navigation.
-    * Persistent Data: Tickets remain saved between executions.
-    * Lightweight Design: Runs entirely in the terminal without external dependencies.
-* **What I learned:**
-    * JSON data persistence in Python
-    * Structuring CLI applications
-    * Menu-driven program logic
-    * File reading and writing operations
-    * Handling user input and validation
-* **Files:** `support_ticket_manager.py`
+### 🔹 System Resource Monitor
+
+Displays live CPU and RAM usage directly in terminal.
+
+**Skills Demonstrated:**
+
+- `psutil`  
+- Real-time loops  
+- Terminal dashboards  
+
+**Files:** `resource_monitor.py`
 
 ---
 
-🔹 **Payroll CLI System (Business Logic Simulation)**
-A command-line payroll processing system that models real-world Brazilian payroll rules with structured business logic and persistent logging.
-* **Features:**
-    * Gross Salary Calculation: Based on hourly rate and worked hours.
-    * Progressive INSS Calculation: Applies tier-based social security rates.
-    * IRRF Computation: Calculates income tax using base deduction rules.
-    * Union Fee Deduction: Automatic percentage-based calculation.
-    * Net Salary Output: Structured and formatted CLI display.
-    * Persistent Logging: Appends payroll records into a `.txt` file with timestamp.
-    * Multi-Employee Support: Loop-based execution for batch processing.
-    * One-click Execution: Includes `.bat` launcher for simplified runtime.
-* **What I learned:**
-    * Business rule modeling in Python
-    * Progressive tax logic implementation
-    * File handling using `with open()` context manager
-    * Data formatting and financial precision handling
-    * Timestamp logging with `datetime`
-    * Structured CLI user interaction
-* **Files:** `payroll_cli_v1.py`, `payroll_cli_v1.bat`
+### 🔹 File Integrity Auditor
+
+Generates SHA-256 hashes to verify files.
+
+**Skills Demonstrated:**
+
+- Cryptography  
+- Binary file reading  
+- Security automation  
+
+**Files:** `file_hasher.py`
 
 ---
 
-🔹 **Smart Screenshot Organizer (Advanced Workflow)**
-A professional-grade automation tool designed to eliminate folder clutter by restructuring local files into a logical chronological hierarchy.
-* **Features:**
-    * Dynamic Path Discovery: Robust logic to identify OneDrive and local image directories across various Windows configurations.
-    * Smart Pattern Matching: Detects standard Windows capture naming conventions (e.g., "Captura de tela" and "Screenshot").
-    * Chronological Sorting: Automatically creates and moves files into month-based folders (e.g., 2026-02 (Prints)) based on file metadata.
-* **What I learned:** Abstract path management, system environment variables, and automated file-system restructuring.
-* **Files:** `screenshot_organizer.py`, `run_screenshot_org.bat`
+## 📚 Technologies Used
+
+### Languages
+
+- **Python 3.x**  
+- **Windows Batch (.bat)**
+
+### Core Libraries
+
+- `os`
+- `shutil`
+- `datetime`
+- `hashlib`
+- `socket`
+- `subprocess`
+- `time`
+- `json`
+- `platform`
+
+### External Libraries
+
+- `pandas`
+- `requests`
+- `psutil`
+- `pywin32`
 
 ---
 
-🔹 **Digital Integrity Auditor (Security Tool)**
-A security-focused utility that generates unique cryptographic signatures (SHA-256) to verify file authenticity and detect tampering.
-* **Features:**
-    * Cryptographic Precision: Uses the industry-standard SHA-256 algorithm for reliable integrity checks.
-    * Efficient Streaming: Processes files in 4096-byte chunks to handle large files (ISOs, Databases) without high memory consumption.
-    * Interactive CLI: Supports drag-and-drop input for rapid operational auditing.
-* **What I learned:** Cryptography concepts, binary data streaming, and interactive shell sanitization.
-* **Files:** `file_hasher.py`, `run_integrity_check.bat`
+## 📖 How to Run
 
----
+### 1. Clone Repository
 
-🔹 **System Resource Monitor (Real-Time Dashboard)**
-A real-time performance monitoring tool that displays CPU and RAM usage directly in the terminal using a visual dashboard.
-* **Features:**
-    * Real-time CPU and memory tracking
-    * Terminal dashboard with visual progress bars
-    * Automatic screen refresh for live monitoring
-    * Critical usage alerts for high resource consumption
-    * One-click execution via a .bat launcher
-* **What I learned:** System resource monitoring with external libraries, terminal visualization techniques, and real-time data loops.
-* **Files:** `resource_monitor.py`, `resource_dashboard.bat`
-
----
-
-🔹 **System Cleanup Automation (High Impact)**
-A powerful maintenance tool designed to wipe out temporary files and optimize Windows performance.
-* **Features:**
-    * Deep Scan: Targets multiple system and user temporary directories.
-    * Resilient Execution: Advanced exception handling to bypass files in use.
-    * Privilege Awareness: Detects and reports missing Administrative rights for restricted folders.
-    * Automated Summary: Provides a final report of total items removed vs. items kept for security.
-* **What I learned:** Advanced file system manipulation, OS environment variables, and professional error handling for system-level scripts.
-* **Files:** `system_cleaner.py`, `run_cleanup.bat`
-
----
-
-🔹 **NetPulse - Network Health Monitor**
-A real-time network stability tool that tracks latency and connection quality.
-* **Features:**
-    * Real-time Latency Tracking: Measures ping in milliseconds.
-    * Visual Status Alerts: Terminal indicators for Stable, High Latency, or Connection Drop.
-    * Event Logging: Saves connection events to `network_health.log` for troubleshooting.
-* **What I learned:** System process interaction via `subprocess`, handling real-time data loops, and conditional status reporting.
-* **Files:** `netpulse_monitor.py`, `run_netpulse.bat`
-
----
-
-🔹 **Network Security Port Scanner**
-A security auditing tool designed to identify open ports and potential vulnerabilities in a network host.
-* **Features:**
-    * Scans common service ports (SSH, HTTP, RDP, etc.).
-    * Real-time connection testing using socket programming.
-    * Generates security audit logs for compliance tracking.
-* **What I learned:** Network protocols, socket timeouts, and handling network-level exceptions.
-* **Files:** `port_scanner.py`, `run_port_scanner.bat`
-
----
-
-🔹 **Web Availability & Latency Checker**
-A connectivity tool to check if a website is online and measure its response time.
-* **Features:**
-    * Checks if a URL is up (Online/Offline status).
-    * Measures latency (ping) in milliseconds.
-    * Performs multiple attempts with timed intervals.
-    * Automatic logging of results in `web_monitor_log.txt`
-* **What I learned:** Measuring execution time and managing connection timeouts.
-* **Files:** `web_monitor.py`, `run_web_monitor.bat`
-
----
-
-🔹 **Currency & Market Monitor**
-A real-time financial monitoring tool that connects to external APIs to fetch currency exchange rates.
-* **Features:**
-    * Real-time data for USD, EUR, and BTC.
-    * Integration with REST APIs (JSON handling).
-    * Automatic history logging in .txt format.
-    * One-click execution via .bat file.
-* **Files:** `currency_monitor.py`, `run_monitor.bat`
-
----
-
-🔹 **System Health Check**
-A portable diagnostic tool developed in Python to perform quick system health checks.
-* **Features:**
-    * Checks available disk space.
-    * Verifies internet connectivity.
-    * Designed for fast troubleshooting.
-    * Portable execution via .bat file.
-* **Files:** `health_check.py`, `executar_check.bat`
-
----
-
-🔹 **System Information Reporter**
-Collects essential system information and generates a structured .txt report.
-* **Features:**
-    * OS information and CPU details.
-    * Machine and network name.
-    * Automatic report generation.
-* **Files:** `system_info.py`, `executar_info.bat`
-
----
-
-🔹 **File Organizer Tool**
-A Python automation script that organizes files into folders based on file extensions.
-* **Features:**
-    * Automatically detects file extensions.
-    * Creates destination folders dynamically.
-    * Moves files safely.
-* **Files:** `file_organizer.py`, `run_file_organizer.bat`
-
----
-
-🛠️ **Technologies**
-
-* **Python 3.x**
-* **Windows Batch (CMD)**
-* **Core Libraries:** `os`, `shutil`, `hashlib`, `socket`, `platform`, `datetime`, `subprocess`, `time`
-* **External Libraries: `requests`, `psutil`, `pandas`, `pywin32`
-
----
-
-📖 **How to Use**
-
-1. Clone the repository: 
-```bash 
+```bash
 git clone https://github.com/hericlesfsr/it-automation-scripts.git
 ```
-2. Setup Environment:
-It is highly recommended to use a virtual environment (`.venv`) for dependency isolation.
-3. Install Dependencies: 
+
+### 2. Install Dependencies
+
 ```bash
-pip install requests psutil
+pip install pandas requests psutil pywin32
 ```
-4. **Execution:** 
-* **Standard tools:** Double-click the corresponding `.bat` file for automated execution via Python.
-* **System Cleaner:** Right-click `run_cleanup.bat` and select **"Run as Administrator"** to ensure full access to temporary system directories.
-* **Integrity Auditor:** Run `run_integrity_check.bat` and drag any file into the terminal to generate its SHA-256 signature.
+
+### 3. Run Example
+
+```bash
+python attendance_logger.py
+```
 
 ---
 
-👨‍💻 Who Is This For?
+## 🎯 Purpose
 
-This repository is ideal for:
+This portfolio was built to demonstrate practical Python skills applied to:
 
-* **IT Support and Help Desk professionals**
-* **Junior System Administrators**
-* **Infrastructure and NOC analysts**
-* **Students building an automation portfolio**
-* **Anyone learning Python for real-world operational tasks**
-
----
-
-🎯 **Purpose**
-
-These projects simulate real-world operational scenarios in IT Support, Infrastructure, Security, and Business Logic environments.
-
-The main objective is to demonstrate practical automation skills using Python to improve operational efficiency, troubleshooting workflows, and system observability
+- IT Support routines  
+- Operational automation  
+- Infrastructure tasks  
+- Monitoring solutions  
+- Productivity improvements  
 
 ---
 
+## 👨‍💻 Ideal For
+
+- Recruiters hiring Junior Python Developers  
+- IT Support / Help Desk roles  
+- Infrastructure Analyst roles  
+- NOC positions  
+- Automation-focused opportunities  
+
+---
+
+## 📈 Recent Additions
+
+- Employee Attendance Logger  
+- Automated File Backup Tool  
+- Disk Usage Analyzer 
+
+---
+
+## 📬 Contact
+
+- **GitHub:** https://github.com/hericlesfsr  
+- **LinkedIn:** https://linkedin.com/in/hericles-rozendo
+
+---
+
+## ⭐ If you found this repository useful, feel free to star it.
