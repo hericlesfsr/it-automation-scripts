@@ -80,6 +80,7 @@ security
 │   run_integrity_check.bat
 │
 support
+|   it_asset_inventory.py
 │   support_ticket_manager.py
 │
 system
@@ -97,19 +98,36 @@ system
 
 ## 📂 Folder Overview
 
-- **automation** → file management and workflow automation scripts  
-- **business** → business logic and administrative tools  
-- **finance** → financial monitoring and expense tools  
-- **monitoring** → logs, resource usage, disk analysis  
+- **automation** → file management, backup and workflow automation tools  
+- **business** → business logic, attendance and administrative tools  
+- **finance** → financial monitoring and expense tracking tools  
+- **monitoring** → logs, resource usage and disk analysis tools  
 - **network** → connectivity, scanning, latency and uptime tools  
 - **office_automation** → Excel processing and email automation  
 - **security** → integrity verification and auditing tools  
-- **support** → help desk workflow simulation  
-- **system** → diagnostics, maintenance and inventory scripts  
+- **support** → help desk systems, dashboards and IT asset management  
+- **system** → diagnostics, maintenance and inventory scripts
 
 ---
 
 ## 🛠️ Featured Projects
+
+### 🔹 IT Asset Inventory Dashboard
+
+A web-based inventory system built with Python and Flask for registering and tracking IT assets in a corporate environment.
+
+**Skills Demonstrated:**
+
+- Flask web development  
+- HTML + CSS interface  
+- Form handling  
+- IT asset lifecycle tracking  
+- Operational workflow logic  
+- Python backend fundamentals  
+
+**Files:** `it_asset_inventory.py`
+
+---
 
 ### 🔹 Employee Attendance Logger
 
@@ -301,9 +319,9 @@ This portfolio was built to demonstrate practical Python skills applied to:
 
 ## 📈 Recent Additions
 
-- Employee Attendance Logger  
-- Automated File Backup Tool  
-- Disk Usage Analyzer 
+- IT Asset Inventory Dashboard  
+- Employee Attendance Logger
+- Automated File Backup Tool
 
 ---
 
