@@ -81,6 +81,7 @@ security
 │
 support
 |   it_asset_inventory.py
+|   password_reset_request.py
 │   support_ticket_manager.py
 │
 system
@@ -111,6 +112,23 @@ system
 ---
 
 ## 🛠️ Featured Projects
+
+### 🔹 Password Reset Request Dashboard
+
+A web-based internal support system built with Python and Flask to register employee password reset requests.
+
+**Skills Demonstrated:**
+
+- Flask web development  
+- HTML + CSS forms  
+- Request tracking workflow  
+- Priority classification  
+- Timestamp automation  
+- Python backend logic  
+
+**Files:** `password_reset_request.py`
+
+---
 
 ### 🔹 IT Asset Inventory Dashboard
 
@@ -319,9 +337,9 @@ This portfolio was built to demonstrate practical Python skills applied to:
 
 ## 📈 Recent Additions
 
+- Password Reset Request Dashboard
 - IT Asset Inventory Dashboard  
 - Employee Attendance Logger
-- Automated File Backup Tool
 
 ---
 
