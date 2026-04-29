@@ -80,6 +80,7 @@ security
 │   run_integrity_check.bat
 │
 support
+|   daily_it_task_logger.py
 |   it_asset_inventory.py
 |   password_reset_request.py
 │   support_ticket_manager.py
@@ -112,6 +113,22 @@ system
 ---
 
 ## 🛠️ Featured Projects
+
+### 🔹 Daily IT Task Logger
+
+Registers completed IT tasks through terminal input and saves records into a `.txt` history file.
+
+**Skills Demonstrated:**
+
+- `while True` loops
+- File persistence
+- Timestamp automation
+- CLI menu systems
+- Operational workflow logic
+
+**Files:** `daily_it_task_logger.py`
+
+---
 
 ### 🔹 Password Reset Request Dashboard
 
@@ -337,9 +354,9 @@ This portfolio was built to demonstrate practical Python skills applied to:
 
 ## 📈 Recent Additions
 
+- Daily IT Task Logger
 - Password Reset Request Dashboard
 - IT Asset Inventory Dashboard  
-- Employee Attendance Logger
 
 ---
 
