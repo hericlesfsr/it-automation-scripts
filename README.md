@@ -78,7 +78,8 @@ office_automation
 security
 │   file_hasher.py
 │   run_integrity_check.bat
-│
+│   user_access_audit
+|
 support
 |   daily_it_task_logger.py
 |   it_asset_inventory.py
@@ -113,6 +114,22 @@ system
 ---
 
 ## 🛠️ Featured Projects
+
+### 🔹 User Access Audit Tool
+
+Tracks user access changes (granted or removed) and stores records in a `.csv` file for auditing purposes.
+
+**Skills Demonstrated:**
+
+- CSV file handling  
+- Data persistence  
+- Timestamp automation  
+- CLI menu systems  
+- Basic security and audit concepts  
+
+**Files:** `user_access_audit.py`
+
+---
 
 ### 🔹 Daily IT Task Logger
 
@@ -354,9 +371,9 @@ This portfolio was built to demonstrate practical Python skills applied to:
 
 ## 📈 Recent Additions
 
+- User Access Audit Tool
 - Daily IT Task Logger
 - Password Reset Request Dashboard
-- IT Asset Inventory Dashboard  
 
 ---
 
